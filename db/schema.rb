@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_08_054845) do
+ActiveRecord::Schema.define(version: 2020_02_08_061403) do
 
   create_table "products", force: :cascade do |t|
     t.string "sku"
@@ -18,6 +18,16 @@ ActiveRecord::Schema.define(version: 2020_02_08_054845) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["sku"], name: "index_products_on_sku", unique: true
+  end
+
+  create_table "stocks", force: :cascade do |t|
+    t.integer "count"
+    t.integer "product_id"
+    t.integer "warehouse_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_stocks_on_product_id"
+    t.index ["warehouse_id"], name: "index_stocks_on_warehouse_id"
   end
 
   create_table "warehouses", force: :cascade do |t|
