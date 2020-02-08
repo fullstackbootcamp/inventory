@@ -1,0 +1,20 @@
+<h1>Products</h1>
+
+<table>
+  <thead>
+    <tr>
+      <td>SKU</td>
+      <td>Name</td>
+      <td>Updated At</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.sku %></td>
+        <td><%= product.name %></td>
+        <td><%= product.updated_at.strftime('%m-%d-%Y') %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
