@@ -16,12 +16,15 @@ gem 'webpacker'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'mini_magick', '~> 4.8'
 # gem 'capistrano-rails', group: :development
-gem 'rubocop'
-gem 'rubocop-performance'
-gem 'rubocop-rails'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'rubocop'
+  gem 'rubocop-performance'
+  gem 'rubocop-rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do
