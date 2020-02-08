@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :stock do
     count { 1 }
-    product { nil }
-    warehouse { nil }
+    product { Product.first || association(:product) }
+    warehouse { Warehouse.first || association(:warehouse) }
   end
 end
