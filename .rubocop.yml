@@ -1,0 +1,51 @@
+require: rubocop-performance
+AllCops:
+  Exclude:
+    - bin/**/*
+    - vendor/**/*
+    - db/**/*
+    - node_modules/**/*
+    - config/initializers/devise.rb
+Documentation:
+  Enabled: false
+Layout/SpaceBeforeFirstArg:
+  Exclude:
+    - app/views/api/**/**/*
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - spec/**/*
+Metrics/BlockLength:
+  CountComments: false
+  Max: 25
+  Exclude:
+    - config/**/*
+    - spec/**/*
+    - app/admin/**/*
+    - spec/factories/*.rb
+Metrics/BlockNesting:
+  Max: 4
+Metrics/ClassLength:
+  CountComments: false
+Metrics/MethodLength:
+  CountComments: false
+Metrics/ModuleLength:
+  CountComments: false
+  Exclude:
+    - "**/*_spec.rb"
+Layout/LineLength:
+  Max: 120
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+Metrics/ParameterLists:
+  Max: 5
+  CountKeywordArgs: true
+Metrics/PerceivedComplexity:
+  Max: 10
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/ModuleFunction:
+  Enabled: false
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining

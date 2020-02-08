@@ -16,6 +16,9 @@ gem 'turbolinks', '~> 5'
 # gem 'bcrypt', '~> 3.1.7'
 # gem 'mini_magick', '~> 4.8'
 # gem 'capistrano-rails', group: :development
+gem 'rubocop'
+gem 'rubocop-rails'
+gem 'rubocop-performance'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
