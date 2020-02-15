@@ -808,6 +808,18 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@rails/activestorage@^6.0.2-1":
+  version "6.0.2-1"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-6.0.2-1.tgz#c048c190db30f72862fb99102b806fefc748a583"
+  integrity sha512-oiBkpCQWrOVVdSA2xc/X+NDOCEeehcWqX3yrFbCTjOweNz0U60wkmxcPLUJApV8KVl5llmLTqM3VIpQzHcHovA==
+  dependencies:
+    spark-md5 "^3.0.0"
+
+"@rails/ujs@^6.0.2-1":
+  version "6.0.2-1"
+  resolved "https://registry.yarnpkg.com/@rails/ujs/-/ujs-6.0.2-1.tgz#1273f773bc98832371cb09aab619d6120e794b39"
+  integrity sha512-H1yMA4/M8Vdie/TgyNiOkUdFly3g9HGSbnVPl7kiRVnGMZuT/APnCNyvgYWBQbTtYDYB9rrZAAgghxtt1ABDIA==
+
 "@rails/webpacker@4.2.2":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-4.2.2.tgz#b9dd3235fdf4d0badbda8e33f6ebee742a9f3abb"
@@ -1431,6 +1443,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
+
+bootstrap@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.4.1.tgz#8582960eea0c5cd2bede84d8b0baf3789c3e8b01"
+  integrity sha512-tbx5cHubwE6e2ZG7nqM3g/FZ5PQEDMWmMGNrCUBVRPHXTJaH7CBDdsLeu3eCh3B1tzAxTnAbtmrzvWEvT2NNEA==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -3873,6 +3890,11 @@ jest-worker@^25.1.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
+jquery@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
+  integrity sha512-36+AdBzCL+y6qjw5Tx7HgzeGCzC81MDDgaUP8ld2zhx58HdqXGoBd+tHdrBMiyjGQs0Hxs/MLZTu/eHNJJuWPw==
+
 js-base64@^2.1.8:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.5.1.tgz#1efa39ef2c5f7980bb1784ade4a8af2de3291121"
@@ -5078,6 +5100,11 @@ pnp-webpack-plugin@^1.5.0:
   dependencies:
     ts-pnp "^1.1.2"
 
+popper.js@^1.16.1:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
+  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
+
 portfinder@^1.0.25:
   version "1.0.25"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.25.tgz#254fd337ffba869f4b9d37edc298059cb4d35eca"
@@ -5938,6 +5965,13 @@ react@^16.12.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
+react_ujs@^2.6.0, react_ujs@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/react_ujs/-/react_ujs-2.6.1.tgz#a202a33c95c9e2bb18ab56926b7e79f3325ec855"
+  integrity sha512-9M33/A8cubStkZ2cpJSimcTD0RlCWiqXF6e90IQmMw/Caf/W0dtAzOtHtiQE3JjLbt/nhRR7NLPxMfnlm141ig==
+  dependencies:
+    react_ujs "^2.6.0"
+
 read-cache@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/read-cache/-/read-cache-1.0.0.tgz#e664ef31161166c9751cdbe8dbcf86b5fb58f774"
@@ -6544,6 +6578,11 @@ source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.1:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+spark-md5@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.0.tgz#3722227c54e2faf24b1dc6d933cc144e6f71bfef"
+  integrity sha1-NyIifFTi+vJLHcbZM8wUTm9xv+8=
+
 spdx-correct@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-3.1.0.tgz#fb83e504445268f154b074e218c87c003cd31df4"
@@ -7014,6 +7053,11 @@ tunnel-agent@^0.6.0:
   integrity sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=
   dependencies:
     safe-buffer "^5.0.1"
+
+turbolinks@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/turbolinks/-/turbolinks-5.2.0.tgz#e6877a55ea5c1cb3bb225f0a4ae303d6d32ff77c"
+  integrity sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
