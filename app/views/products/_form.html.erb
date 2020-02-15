@@ -1,0 +1,13 @@
+<%= form_with model: product, local: true, id: "product-form" do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+    <%= render_error(product, :name) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :sku %>
+    <%= f.text_field :sku, class: "form-control" %>
+    <%= render_error(product, :sku) %>
+  </div>
+  <%= f.submit "Create Product", class: "btn btn-primary", id: "submit-button" %>
+<% end %>
