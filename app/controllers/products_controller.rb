@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-  before_action :assign_product, only: %i[show edit update]
+  before_action :assign_product, only: %i[show edit update destroy]
 
   def index
     @products = Product.all
@@ -35,7 +35,12 @@ class ProductsController < ApplicationController
     end
   end
 
-  def destroy; end
+  def destroy
+    @product.destroy!
+
+    flash.notice = "Successfully deleted product #{@product.id}!"
+    redirect_to products_path
+  end
 
   private
 

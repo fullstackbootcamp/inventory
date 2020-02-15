@@ -26,6 +26,17 @@ RSpec.describe 'Index of all Products page', type: :system do
     expect(text).to eq('Are you sure you want to delete this product?')
   end
 
+  it 'allows to delete a product', :js do
+    product = create(:product, sku: 'SKU-001', name: 'Kobes')
+
+    visit '/products'
+    page.find("table tbody tr#product--#{product.id} td#product--#{product.id}_actions .delete").click
+    page.driver.browser.switch_to.alert.accept
+
+    expect(page).not_to have_column_for('sku', value: 'SKU-001', record: product)
+    expect(page).to have_success_delete_message(product.id)
+  end
+
   private
 
   def have_a_products_table
@@ -52,5 +63,9 @@ RSpec.describe 'Index of all Products page', type: :system do
 
   def have_a_new_products_button
     have_link('New Product', href: '/products/new')
+  end
+
+  def have_success_delete_message(id)
+    have_text("Successfully deleted product #{id}!")
   end
 end
